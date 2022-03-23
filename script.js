@@ -122,10 +122,12 @@ btnValuesTimer.addEventListener("click", function values(){
     second = prompt("Введите количество секунд",00);
     if(hour>23 || minute>59 || second>59) alert("Неправильно введены данные!");
         else if(hour==null || minute==null || second==null){
+                alert("Неправильно введены данные!");
                 hours.innerText = "00";
                 minutes.innerText = "00";
                 seconds.innerText = "00";
             } else if(hour=="" || minute=="" || second==""){
+                        alert("Неправильно введены данные!");
                         hours.innerText = "00";
                         minutes.innerText = "00";
                         seconds.innerText = "00";
@@ -135,6 +137,7 @@ btnValuesTimer.addEventListener("click", function values(){
                         seconds.innerText = second;
                     }
 });
+
 
 startTimerBtn.addEventListener("click", ()=>{
     if(hour==0 && minute==0 && second==0){
