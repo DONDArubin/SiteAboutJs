@@ -138,7 +138,6 @@ btnValuesTimer.addEventListener("click", function values(){
                     }
 });
 
-
 startTimerBtn.addEventListener("click", ()=>{
     if(hour==0 && minute==0 && second==0){
         alert("Введите данные!");
