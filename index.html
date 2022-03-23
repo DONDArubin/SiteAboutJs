@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="header"> 
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="logo"><h1>JavaScript</h1></div>
+
+            <div class="nav"> 
+                <a class="nav__link" href="#aboutjs"><h1>About</h1></a>
+                <a class="nav__link" href="#featuresjs"><h1>Features</h1></a>
+                <a class="nav__link" href="#test"><h1>Test</h1></a>
+                <a class="nav__link" href="#timer"><h1>Timer</h1></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="intro"> 
+    <div class="container">
+        
+    </div>
+</div>
+
+
+
+<div class="section" id="aboutjs">
+    <div class="container">
+        <h1 class="block__name">About js</h1>
+        <p class="about__js">
+            JavaScript это язык, который позволяет вам применять сложные вещи на web странице — каждый раз, 
+            когда на web странице происходит что-то большее, чем просто её статичное отображение — отображение периодически обновляемого контента, 
+            или интерактивных карт, или анимация 2D/3D графики, или прокрутка видео в проигрывателе, и т.д. — можете быть уверены, что скорее всего, 
+            не обошлось без JavaScript. Это третий слой слоёного пирога стандартных web технологий, два из которых (HTML и CSS) мы детально раскрыли в других частях учебного пособия.
+        </p>
+            <img class="jscake" src="img/jscake.png">
+            <br></br>
+        <p class="about__js">  
+            Ядро языка JavaScript состоит из некоторого количества обычных возможностей, которые позволяют делать следующее:
+            <ul class="about__js">
+                <li>Хранить данные внутри переменных. В примере выше, мы, например, запрашивали ввод нового имени, которое нужно было ввести, затем сохраняли имя в переменной.</li>
+                <li>Операции над фрагментами текстов (известными в программировании как "строки").</li>
+                <li>Запускать код в соответствии с определёнными событиями происходящими на web странице.</li>   
+                <li>И многое другое!</li>
+            </ul>
+
+            <p class="about__js">JavaScript сам по себе довольно компактный, но очень гибкий. Разработчиками написано большое количество инструментов поверх основного языка JavaScript, 
+                которые разблокируют огромное количество дополнительных функций с очень небольшим усилием.</p>
+        </p> 
+    </div>
+</div>
+
+
+<div class="section" id="featuresjs">
+    <div class="container">
+        <div class="function__js">
+            <h1 class="block__name">Features</h1>
+            <div class="js__form1">
+                <div class="questions__form1"><p class="question1">Представтесь:</p></div>
+                <input class="input1" name="name" id="name" type="text" placeholder="Alexandr" required>
+                <button class="btn" id="btn1" >Отправить</button>
+            </div>
+
+            <div class="js__form1">
+                <p class="question1">Площадь треугольника:</p>
+                <input class="input2" name="side" id="side" type="number" placeholder="Основание">
+                <input class="input2" name="height" id="height" type="number" placeholder="Высота">
+                <button class="btn" id="btn2">Посчитать</button>
+            </div>
+
+            <div class="js__form1">
+                <p class="question1">Сравнение строк: </p>
+                <input class="input2" name="firststr" id="firststr" type="text" placeholder="Первая строка">
+                <input class="input2" name="secstr" id="secstr" type="text" placeholder="Вторая строка">
+                <button class="btn" id="btn3">Сравнить</button>
+            </div>
+
+            <div class="js__form1">
+                <p class="question1">Найти максимаьный и минимальный элемент: </p>
+                <input class="input2" name="massiv" id="massiv" type="text" placeholder="1, 2, 3, 4, 5" pattern="^[0-9]+$">
+                <button class="btn" id="btn4">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="test">
+    <div class="container">
+        <h1 class="block__name">Test</h1>
+        <form class="test__form">
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">Какие варианты вызова try..catch являются синтаксически верными?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="1" name="one" id="one" data-ans="true" checked>
+                        <label for="one">try { ... } catch { ... }</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="2" name="one" id="two">
+                        <label for="two">try { ... } catch { ... } finally { ... }</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">Какие конструкции для циклов есть в JavaScript?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="1" name="two" id="one1" data-ans="true" checked>
+                        <label for="one1">Три: for, while и do...while.</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="2" name="two" id="two1">
+                        <label for="two1">Только две: for и while.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">Как округляется число 3.14 до ближайшего целого числа?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="1" name="three" id="one2" data-ans="true" checked>
+                        <label for="one2">Math.round(3.14).</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="2" name="three" id="two2">
+                        <label for="two2">round(3.14).</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">Какой правильный способ однострочных комментариев в JavaScript?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="1" name="four" id="one3">
+                        <label for="one3"> /* Это комментарий. */</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="2" name="four" id="two3" data-ans="true" checked>
+                        <label for="two3">// Это комментарий.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">JavaScript и Java это одно и тоже?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="1" name="five" id="one4">
+                        <label for="one4">Да.</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="2" name="five" id="two4" data-ans="true" checked>
+                        <label for="two4">Нет.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">Какое происходит событие, когда пользователь нажимает на элемент HTML?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="1" name="six" id="one5" data-ans="true" checked>
+                        <label for="one5">onclick.</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="2" name="six" id="two5">
+                        <label for="two5">onmouseclick.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__question">
+                <div class="test__quest"><p class="question1"> Какой используется оператор для присвоения значения переменной?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="1" name="seven" id="one6">
+                        <label for="one6">==</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="2" name="seven" id="two6" data-ans="true" checked>
+                        <label for="two6">=</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">Как вызвать функцию "myFunction"?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="1" name="eight" id="one7" data-ans="true" checked>
+                        <label for="one7">myFunction()</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="2" name="eight" id="two7">
+                        <label for="two7">call myFunction()</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">В чем разница между confirm и prompt?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input type="radio" value="1" name="nine" id="one8" data-ans="true" checked>
+                        <label for="one8">prompt вызывает диалоговое окно с полем для ввода, confirm - окно с подтверждением.</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="2" name="nine" id="two8">
+                        <label for="two8">confirm вызывает диалоговое окно с полем для ввода, prompt - окно с подтверждением.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__question">
+                <div class="test__quest"><p class="question1">В чем отличие между локальной и глобальной переменной?</p></div>
+                <div class="test__ans">
+                    <div class="test__radio__btn" id="test__radio__btn">
+                        <input type="radio" value="1" name="ten" id="one9">
+                        <label for="one9">Локальные можно переопределять, глобальные нельзя.</label>
+                    </div>
+
+                    <div class="test__radio__btn" id="test__radio__btn" data-wrapper="true">
+                        <input  type="radio" value="2" name="ten" id="two9" data-ans="true" checked>
+                        <label for="two9">Глобальные видны повсюду, локальные только в функциях.</label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="test__js__submit" id="test__js__submit">Отправить</button>
+            
+        </form>
+    </div>
+</div>
+
+<div class="section" id="timer">
+    <div class="container">
+        <h1 class="block__name">Timer</h1>
+
+        <div class="timer">
+
+            <div class="timer__block">
+                <div class="time__hour">00</div>
+                <div class="title__timer">Hours</div>
+            </div>
+
+            <div class="timer__block">
+                <div class="time__minute">00</div>
+                <div class="title__timer">Minutes</div>
+            </div>
+
+            <div class="timer__block">
+                <div class="time__second">00</div>
+                <div class="title__timer">Seconds</div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button class="button__timer" id="button__timer__start">Start</button>
+            <button class="button__timer" id="button__timer__pause">Pause</button>
+            <button class="button__timer" id="button__timer__stop">Stop</button>
+        </div>
+
+        <div class="btnValues">
+            <button class="button__timer__value" id="button__timer__start__value">Введите данные</button>
+        </div>
+
+    </div>
+</div>  
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <button class="button__footer" id="button__footer">SCREENSAVER</button>
+        </div>
+    </div>
+</footer>
+
+
+<div class="show__info" id="show__info">
+    <div class="container">
+        <div class="show__info__inner" id="show__info__inner">
+            <div class="show__info__date" id="show__info__date">00:00:00</div>
+
+            <div class="show__info__name" id="show__info__name"><br></br>Ваше имя</div>
+
+            <div class="show__info__skills" id="show__info__skills"><br></br>Для того, чтобы повторить это решиние, необходимо знать - HTML/CSS/JS. В частности функции и методы: 
+                document.querySelector, .addEventListener, .getElementById, alert, .replace, .split, Math.max/max.apply, .preventDefault, .clearInterval, .innerText, .style, .innerHTML...
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
